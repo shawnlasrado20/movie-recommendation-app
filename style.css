@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  #MovieRecommendation {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #MovieRecommendation > div {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  #MovieRecommendation > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  }
+  
+  #MovieRecommendation img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #MovieRecommendation h3 {
+    font-size: 1.2rem;
+    margin: 15px 10px 5px;
+    color: #333;
+  }
+  
+  #MovieRecommendation p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 10px;
+  }
+  
+  select, button {
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
